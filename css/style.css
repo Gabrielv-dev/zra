@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap');
+
+:root {
+    box-sizing: border-box;
+    --blue-color: #5c84ec;
+    --pink-color: #f03c6d;
+    --paragraph-color: #707070;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--blue-color), var(--pink-color));
+    border-radius: 20px;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    background: #f9fbff;
+    position: relative;
+
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--paragraph-color);
+}
+
+a {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+/* navigation section */
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+nav.stickyadd .active {
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.7);
+}
+
+nav.stickyadd {
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.5s;
+}
+
+nav.stickyadd .nav-item .nav-link {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+nav.stickyadd .navbar-brand {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+nav.stick {
+    transition: all 0.5s;
+}
+
+.hamburger {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.hamburger.whenscrolled {
+    color: #000;
+}
+
+/* Hero section */
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(92, 132, 236, 0.8), rgba(92, 132, 236, 0.8)), url(../assets/images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    color: #fff;
+}
+
+/* about section */
+.about-class {
+    margin-top: -200px;
+}
+
+.about-content {
+    background: linear-gradient(135deg, var(--blue-color), var(--pink-color));
+}
+
+.wrap {
+    margin-top: 40px;
+    padding: 30px;
+}
+
+.wrap p,
+.wrap h2 {
+    color: #fff;
+}
+
+.wrap h2 {
+    margin-bottom: 20px;
+}
+
+/* service */
+ .buttons{
+    background: linear-gradient(135deg, var(--blue-color), var(--pink-color));
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 40px;
+}
+.buttons:hover{
+    opacity: 80%;
+}
+.card {
+     background-size: cover;
+}
+.service-show {
+    text-align: center;
+
+}
+.service-show img{
+    padding-right: 45px;
+}
+.service-show .card{
+    border-radius: 12px;
+    
+}
+
+.service-class .card {
+   padding: 20px;
+}
+
+.service-class i {
+    font-size: 50px;
+    background: linear-gradient(var(--pink-color), black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Team Section */
+.team-class {
+    z-index: 3;
+    padding: 100px;
+}
+
+.team-class img {
+    z-index: 2;
+}
+
+.team-class .bg-white {
+    background: #fff;
+}
+
+.team-content {
+    padding: 15px;
+}
+
+.team-class .box {
+    position: relative;
+    z-index: 1;
+}
+
+.team-class .box::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+    background: linear-gradient(135deg, var(--blue-color), var(--pink-color));
+}
+
+/* Project SEction */
+
+.project-class i {
+    font-size: 50px;
+    background: linear-gradient(var(--pink-color), black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px 0 5px 20px;
+}
+
+.project-class .col-lg-3 {
+    padding: 0;
+}
+
+.project-class .card {
+    margin-right: 10px;
+}
+
+/* contact section */
+.contact-class .bg-contact {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(74, 118, 237, 0.4), rgba(74, 118, 237, 0.8)), url('../assets/images/map.jpg');
+    background-position: 200 200;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-content {
+    margin-top: -20vh;
+    
+}
+
+.contact-class form {
+    background-color: #fff;
+    padding: 100px;
+    
+}
+
+.contact-class .contact-addr {
+    background: linear-gradient(135deg, var(--blue-color), var(--pink-color));
+    padding: 90px;
+    color: #fff;
+
+    
+}
+
+.contact-class .contact-addr p {
+    color: #fff;
+    margin: 20px 0;
+}
+
+.contact-class .social-icon {
+    display: table;
+    cursor: pointer;
+
+}
+
+.contact-class .social-icon a {
+    display: table-cell;
+    font-size: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    
+
+}
+.social-icon{
+ margin-left: 70px;
+}
+
+/* footer */
+footer {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background: #0c003e;
+}
+
+footer p {
+    color: #fff;
+
+}
+
+
+
+
+.contact .info-box {
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+  background: #fff;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #5a5af3;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .php-email-form {
+  background: #fff;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  border-color: #5a5af3;
+}
+
+.contact .php-email-form input {
+  padding: 20px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: linear-gradient(135deg, var(--blue-color), var(--pink-color));
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 40px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  opacity: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:575.98px) {
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .about-class {
+        margin-top: 0;
+    }
+
+    .service-class {
+        text-align: center;
+    }
+
+    .service-content {
+        margin-bottom: 50px;
+    }
+
+    .team-class {
+        text-align: center;
+        padding: 0px;
+    }
+
+    .team-class h2 {
+        text-align: center;
+    }
+
+    .team-class .team-content {
+        margin-top: 50px;
+    }
+
+    .project-class {
+        text-align: center;
+    }
+
+    .project-class .card {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .project-class .col-lg-3 {
+        padding: 15px;
+    }
+    .section-title h2{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    
+.contact .info-box{
+        border-radius: 40px;
+    }
+    footer {
+        height: 80px;
+        line-height: 80px;
+    }
+    .social-icon{
+ margin-left: 115px;
+}
+
+    .service-show .card{
+        margin-left: 40px;
+        margin-bottom: 15px;
+    }
+
+}
